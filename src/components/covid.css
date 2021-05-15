@@ -1,0 +1,82 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box; 
+ overflow: hidden; 
+}
+section {
+  background-color: #000;
+  text-align: center;
+  color: #000;
+  height: 100vh;
+}
+section h1 {
+  color: red;
+  text-transform: uppercase;
+}
+section h2{
+    color: #fff;
+    text-transform: uppercase;
+  }
+section ul {
+  text-decoration: none;
+  list-style: none;
+}
+.card {
+  width: 30.33%;
+  display: inline-grid;
+  height: 250px;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+.card__main {
+  margin: 10px;
+  background-color: aqua;
+  height: 230px;
+  
+}
+.card__name {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+ 
+}
+.card__name span {
+  font-size: 14px;
+  font-weight: 700;
+}
+.card__total{
+    line-height: 60px;
+    color: #fff;
+    font-size: 3.5rem;
+    display: inline;
+    font-weight: bold;
+    text-shadow: 3px 3px 3px rgba(147, 150, 150, 1);
+}
+li:nth-child(1) .card__main{
+    background: rgb(136, 118, 240);
+  }
+  li:nth-child(2) .card__main{
+    background: rgb(24, 199, 8);
+  }
+  li:nth-child(3) .card__main{
+    background: rgb(207, 204, 3);
+  }
+  li:nth-child(4) .card__main{
+    background: rgb(228, 103, 20);
+  }li:nth-child(5) .card__main{
+    background: rgb(2, 185, 176);
+  }
+  li:nth-child(6) .card__main{
+    background: rgb(194, 209, 58);
+   
+  }
+.card__inner{
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2rem;
+}
