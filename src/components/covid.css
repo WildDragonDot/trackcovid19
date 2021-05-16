@@ -2,7 +2,7 @@
  padding: 0;
  margin: 0;
  box-sizing: border-box; 
- overflow: hidden; 
+ 
 }
 section {
   background-color: #000;
@@ -54,7 +54,7 @@ section ul {
     font-size: 3.5rem;
     display: inline;
     font-weight: bold;
-    text-shadow: 3px 3px 3px rgba(147, 150, 150, 1);
+    text-shadow: 3px 4px 3px rgb(92 99 99);
 }
 li:nth-child(1) .card__main{
     background: rgb(136, 118, 240);
@@ -75,8 +75,13 @@ li:nth-child(1) .card__main{
    
   }
 .card__inner{
-    display: grid;
+    display: inline-grid;
     justify-items: center;
     text-align: center;
     margin-top: 2rem;
+}
+@media only screen and (max-width: 991px) {
+  .card {    
+    display: initial;  
+  }
 }
